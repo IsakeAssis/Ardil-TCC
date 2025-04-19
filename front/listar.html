@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Contas Bancárias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Ardiu</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="adicionar.html" class="nav-link">Adiconar conta</a>
+                </li>
+                <li class="nav-item">
+                    <a href="listar.html" class="nav-link">Listar contas</a>
+                </li>
+                
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="lista-contas-container">
+        <h1 class="titulo-lista">Contas Bancárias Cadastradas</h1>
+        <button onclick="carregarContas()" class="botao-carregar">Carregar Contas</button>
+        <ul id="lista-contas" class="lista-contas">
+            <!-- As contas serão inseridas aqui via JS -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
