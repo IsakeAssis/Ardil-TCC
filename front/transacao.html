@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Lista de Contas Bancárias</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nova Transação</title>
+
 </head>
 <body>
     <header class="header">
@@ -31,14 +33,23 @@
             </div>
         </nav>
     </header>
-    <div class="lista-contas-container">
-        <h1 class="titulo-lista">Contas Bancárias Cadastradas</h1>
-        <button onclick="carregarContas()" class="botao-carregar">Carregar Contas</button>
-        <ul id="lista-contas" class="lista-contas">
-            <!-- As contas serão inseridas aqui via JS -->
-        </ul>
+    <div class="transacao-container">
+        <form class="transacao-form" id="transacaoForm">
+          <h2>Simular Transação</h2>
+    
+          <input type="number" name="id_conta_origem" placeholder="ID Conta Origem" required />
+          <input type="number" name="id_conta_destino" placeholder="ID Conta Destino" required />
+          <input type="number" step="0.01" name="valor" placeholder="Valor da Transação" required />
+          <input type="text" name="descricao" placeholder="Descrição da Transação" required />
+    
+          <button type="submit">Enviar Transação</button>
+          <div class="transacao-msg" id="transacaoMensagem"></div>
+          <p id="mensagem" style="color: red;"></p>
+
+        </form>
     </div>
 
-    <script src="script.js"></script>
+  <script src="transacao.js">
+  </script>
 </body>
 </html>

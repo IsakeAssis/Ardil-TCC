@@ -232,3 +232,58 @@ a {
   text-align: center;
   margin-top: 15px;
 }
+
+
+
+
+
+.transacao-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.transacao-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.transacao-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.transacao-form input,
+.transacao-form button,
+.transacao-form textarea,
+.transacao-form select {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.transacao-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.transacao-form button:hover {
+  background-color: #218838;
+}
+
+.transacao-msg {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}

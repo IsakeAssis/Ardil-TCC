@@ -10,6 +10,7 @@ async function carregarContas() {
       contas.forEach(conta => {
           const item = document.createElement("li");
           item.innerHTML = `
+              <strong>ID:</strong> ${conta.id_conta}<br>
               <strong>Nome:</strong> ${conta.nome_titular}<br>
               <strong>CPF:</strong> ${conta.cpf}<br>
               <strong>Banco:</strong> ${conta.instituicao_bancaria}<br>
