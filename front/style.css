@@ -287,3 +287,37 @@ a {
   font-weight: bold;
   text-align: center;
 }
+
+
+
+.formulario-historico input,
+.formulario-historico button {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 300px;
+  max-width: 100%;
+}
+
+.mensagem-usuario-transacao {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.tabela-historico-transacoes {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  display: none;
+}
+
+.tabela-historico-transacoes th,
+.tabela-historico-transacoes td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.tabela-historico-transacoes th {
+  background-color: #f0f0f0;
+}

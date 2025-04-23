@@ -25,7 +25,7 @@
                     <a href="transacao.html" class="nav-link">Simular tranzações</a>
                 </li>
                 <li class="nav-item">
-                    <a href="transaoes_conta.html" class="nav-link">Listar transações de uma conta</a>
+                    <a href="transaoes_conta.html" class="nav-link">Listar transações de uma conta </a>
                 </li>
                 
             </ul>
@@ -37,10 +37,35 @@
         </nav>
     </header>
 
+    <h1>📄 Histórico de Transações do Usuário</h1>
+
+    <form id="formulario-historico" class="formulario-historico">
+      <label for="input-id-conta-historico">Digite o ID da Conta:</label>
+      <input type="number" id="input-id-conta-historico" required>
+      <button type="submit">🔍 Buscar Transações</button>
+    </form>
+  
+    <div id="mensagem-usuario-transacao" class="mensagem-usuario-transacao"></div>
+  
+    <table id="tabela-historico-transacoes" class="tabela-historico-transacoes">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tipo</th>
+          <th>Descrição</th>
+          <th>Valor (R$)</th>
+          <th>Data e Hora</th>
+          <th>Para (Destino)</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
 
 
 
 
-  <script src="visual.js"></script>
+
+  <script src="transacao_conta.js"></script>
 </body>
 </html>
